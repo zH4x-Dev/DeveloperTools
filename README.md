@@ -102,5 +102,30 @@ Usage Example: `brank_dump_specialeditions {database_special_id} {database_speci
 
 Output Example: `1,Edition_Holographic,Holographic`
 
-### Parameters
+### Parameters and Examples
 
+Parameters can be used in any order you want, the final output will be organized to match what you put in.
+
+Parameters are organized by what can be used with each specific command, there is `Slot`, `Online Product`, `Offline Product`, `Map`, `Playlist`, `Attribute`, and `Database`.
+
+When dumping products related to your inventory all four parameters `Slot`, `Attribute`, `Online Product`, and `Offline Product` and be used. Online refers to information that is exclusive to products in your inventory. Offline refers to the information the game stores in it's database for products. As such the product dumper command can only use the `Slot` or `Offline Product` parameters. As you might guess, `Playlist` can only be used with the playlist dumper, `Map` will only work with the map dumper, and so on.
+
+| Slot Parameters | Output Example |
+| ------ | ------ |
+| {slot_label} | Body |
+| {slot_plural_Label} | Bodies |
+| {slot_description} | Completely change your vehicle's style with a new body! |
+| {slot_online_label} | Body |
+| {slot_index} | 0 |
+
+| Online Product Parameters | Output Example |
+| ------ | ------ |
+| {online_instance_id} | 2039203868 |
+| {online_series_id} | 20 |
+| {online_bool_tradable} | false |
+| {online_int_tradable} | 0 |
+| {online_added_timestamp} | 1509241699 |
+| {online_cached_sort_label} | Vampire Bat	CertifiedTurtle0102039203868 |
+| {online_cached_short_sort_label} | None |
+| {online_cached_hash_id} | 60729611 |
+| {online_attribute_string} | CertifiedTurtleGoals1: |
