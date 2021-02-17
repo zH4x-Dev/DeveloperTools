@@ -5,7 +5,7 @@ A collection of features that may be useful to plugin developers or organization
 
 All information exported/dumped from this plugin can be found in the `bakkesmod\data\DeveloperTools` directory in CSV format.
 
-### Features
+# Features
 
 - `Function Dumper` Dump all functions in the game that can be used for function hooks.
 - `Texture Name Dumper` Dump all names of currently active/loaded textures the game is using.
@@ -18,7 +18,7 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 - `Certification Dumper` Dump all information about certified attributes in the game.
 - `Special Edition Dumper` Dump all information about special edition attributes in the game.
 
-### Commands and Examples
+# Commands and Examples
 
 All dump commands (excluding the Function and Texture Dumper) can be used with custom parameters in any order the user wants. The map and playlist dumper features will only dump what is available to the user via the UI, this is to prevent accidently exposing unreleased game modes/maps.
 
@@ -102,7 +102,7 @@ Usage Example: `brank_dump_specialeditions {database_special_id} {database_speci
 
 Output Example: `1,Edition_Holographic,Holographic`
 
-### Parameters and Examples
+# Parameters and Examples
 
 Parameters can be used in any order you want, the final output will be organized to match what you put in.
 
