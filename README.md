@@ -92,7 +92,7 @@ Command: `brank_dump_certifications {parameters}`
 
 Usage Example: `brank_dump_certifications {database_certified_id} {database_certified_name} {database_certified_label} {database_certified_description}`
 
-Output Example: `1,AerialGoals,Aviator,When equipped in an online match, this item keeps track of how many aerial goals you score.`
+Output Example: `1,AerialGoals,Aviator,When equipped in an online match\, this item keeps track of how many aerial goals you score.`
 
 - **Special Edition Dumper**
 
@@ -232,7 +232,7 @@ If a parameter contains `bool`, it will return either true or false. If it conta
 | {attribute_certified_name} | TurtleGoals |
 | {attribute_certified_label} | Turtle |
 | {attribute_certified_value} | 1 |
-| {attribute_certified_description} | When equipped in an online match, this item keeps track of how many upside down goals you score. |
+| {attribute_certified_description} | When equipped in an online match\, this item keeps track of how many upside down goals you score. |
 | {attribute_title_id} | S15_SuperSonic_Legend |
 | {attribute_title_category} | SZN_1_White |
 | {attribute_title_text} | S1 Supersonic Legend |
@@ -244,3 +244,19 @@ If a parameter contains `bool`, it will return either true or false. If it conta
 | {attribute_team_id} | None |
 | {attribute_team_name} | None |
 | {attribute_team_teamname} | None |
+
+| Database Parameters | Output Example |
+| ------ | ------ |
+| {database_paint_id} | 1 |
+| {database_paint_name} | Red_00 |
+| {database_paint_label} | Crimson |
+| {database_paint_colors} | #990000|#FF0B0B|#720000|#FF0000 |
+| {database_paint_finish_id} | 0 |
+| {database_paint_finish_label} | Standard |
+| {database_certified_id} | 1 |
+| {database_certified_name} | AerialGoals |
+| {database_certified_label} | Aviator |
+| {database_certified_description} | When equipped in an online match\, this item keeps track of how many aerial goals you score. |
+| {database_special_id} | 1 |
+| {database_special_name} | Edition_Holographic |
+| {database_special_label} | Holographic |
