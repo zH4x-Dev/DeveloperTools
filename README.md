@@ -222,3 +222,25 @@ If a parameter contains `bool`, it will return either true or false. If it conta
 | {playlist_map_name} | throwbackhockey_p |
 | {playlist_server_command} | Game=TAGame.GameInfo_GodBall_TA?playtest?listen?Public?GameTags=BotsNone |
 | {playlist_mapset_name} | SoccarStandard |
+
+| Attribute Parameters | Output Example |
+| ------ | ------ |
+| {attribute_painted_id} | 12 |
+| {attribute_painted_name} | White_00 |
+| {attribute_painted_label} | Titanium White |
+| {attribute_certified_id} | 14 |
+| {attribute_certified_name} | TurtleGoals |
+| {attribute_certified_label} | Turtle |
+| {attribute_certified_value} | 1 |
+| {attribute_certified_description} | When equipped in an online match, this item keeps track of how many upside down goals you score. |
+| {attribute_title_id} | S15_SuperSonic_Legend |
+| {attribute_title_category} | SZN_1_White |
+| {attribute_title_text} | S1 Supersonic Legend |
+| {attribute_title_color} | #E8E8E8 |
+| {attribute_title_glowcolor} | #E8E8E8 |
+| {attribute_special_id} | 2 |
+| {attribute_special_name} | Edition_Infinite |
+| {attribute_special_label} | Infinite |
+| {attribute_team_id} | None |
+| {attribute_team_name} | None |
+| {attribute_team_teamname} | None |
