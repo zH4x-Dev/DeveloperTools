@@ -129,3 +129,35 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {online_cached_short_sort_label} | None |
 | {online_cached_hash_id} | 60729611 |
 | {online_attribute_string} | CertifiedTurtleGoals1: |
+
+| Online Product Parameters | Output Example |
+| ------ | ------ |
+| {product_id} | 1300 |
+| {product_unlock_method_id} | 1 |
+| {product_unlock_method_label} | Online |
+| {product_quality_id} | 8 |
+| {product_quality_label} | Limited |
+| {product_bool_licensed} | false |
+| {product_int_licensed} | 0 |
+| {product_bool_paintable} | false |
+| {product_int_paintable} | 0 |
+| {product_bool_currency} | false |
+| {product_int_currency} | 0 |
+| {product_bool_blueprint} | false |
+| {product_int_blueprint} | 0 |
+| {product_bool_schematic} | false |
+| {product_int_schematic} | 0 |
+| {product_bool_decryptor} | false |
+| {product_int_decryptor} | 0 |
+| {product_asset_package} | skin_octane_esports |
+| {product_asset_path} | skin_octane_esports.skin_octane_esports |
+| {product_label} | RLCS |
+| {product_ascii_label} | Octane: RLCS |
+| {product_long_label} | Octane: RLCS |
+| {product_short_ascii_label} | RLCS |
+| {product_short_sort_label} | RLCS |
+| {product_sort_label} | Octane: RLCS |
+| {product_thumbnail_path} | Skin_Octane_Esports_T.Skin_Octane_Esports_T |
+| {product_thumbnail_package} | Skin_Octane_Esports_T |
+| {product_thumbnail_asset} | Skin_Octane_Esports_T |
+| {product_trademark_label} | RLCS |
