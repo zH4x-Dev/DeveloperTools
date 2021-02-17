@@ -1,7 +1,7 @@
 
 # DeveloperTools
 
-A collection of features that may be useful to plugin developers or organizations.
+A collection of features for plugin developers and organizations.
 
 All information exported/dumped from this plugin can be found in the `bakkesmod\data\DeveloperTools` directory in CSV format.
 
