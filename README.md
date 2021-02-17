@@ -110,6 +110,8 @@ Parameters are organized by what can be used with each specific command, there i
 
 When dumping products related to your inventory all four parameters `Slot`, `Attribute`, `Online Product`, and `Offline Product` and be used. Online refers to information that is exclusive to products in your inventory. Offline refers to the information the game stores in it's database for products. As such the product dumper command can only use the `Slot` or `Offline Product` parameters. As you might guess, `Playlist` can only be used with the playlist dumper, `Map` will only work with the map dumper, and so on.
 
+If a parameter contains `bool`, it will return either true or false. If it contains `int`, it will return either 1 or 0 indicating true or false.
+
 | Slot Parameters | Output Example |
 | ------ | ------ |
 | {slot_label} | Body |
@@ -161,3 +163,62 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {product_thumbnail_package} | Skin_Octane_Esports_T |
 | {product_thumbnail_asset} | Skin_Octane_Esports_T |
 | {product_trademark_label} | RLCS |
+
+| Map Parameters | Output Example |
+| ------ | ------ |
+| {map_weather_variant_id} | 2 |
+| {map_weather_variant_name} | Day |
+| {map_random_weight} | 1.300000 |
+| {map_variant_name} | Day |
+| {map_base_name} | DFH Stadium |
+| {map_file_name} | stadium_day_p |
+
+| Playlist Parameters | Output Example |
+| ------ | ------ |
+| {playlist_id} | 3 |
+| {playlist_title} | Standard |
+| {playlist_description} | Ranked play with a team |
+| {playlist_player_count} | 6 |
+| {playlist_bool_standard} | true |
+| {playlist_int_standard} | 1 |
+| {playlist_bool_ranked} | false |
+| {playlist_int_ranked} | 0 |
+| {playlist_bool_solo} | false |
+| {playlist_int_solo} | 0 |
+| {palylist_bool_extramode} | false |
+| {playlist_int_extramode} | 0 |
+| {playlist_bool_private} | false |
+| {playlist_int_private} | 0 |
+| {playlist_bool_tournament} | false |
+| {playlist_int_tournament} | 0 |
+| {playlist_bool_applyquitpenalty} | true |
+| {playlist_int_applyquitpenalty} | 1 |
+| {playlist_bool_allowforfiet} | false |
+| {playlist_int_allowforfiet} | 0 |
+| {playlist_bool_disablereconnect} | false |
+| {playlist_int_disablereconnect} | 0 |
+| {playlist_bool_ignoreassignteams} | false |
+| {playlist_int_ignoreassignteams} | 0 |
+| {playlist_bool_allowbotfills} | true |
+| {playlist_int_allowbotfills} | 1 |
+| {playlist_bool_kickonmigrate} | false |
+| {playlist_int_kickonmigrate} | 0 |
+| {playlist_bool_checkreservation} | false |
+| {playlist_int_checkreservation} | 0 |
+| {playlist_bool_ismicroevent} | false |
+| {playlist_int_ismicroevent} | 0 |
+| {playlist_bool_hasvariableplayercount} | false |
+| {playlist_int_hasvariableplayercount} | 0 |
+| {playlist_bool_new} | false |
+| {playlist_int_new} | 0 |
+| {playlist_bool_allowclubs} | true |
+| {playlist_int_allowclubs} | 1 |
+| {playlist_bool_allowstayasparty} | true |
+| {playlist_int_allowstayasparty} | 1 |
+| {playlist_image_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_event_mode_bg_heatseeker.jpg |
+| {playlist_image_texture} | None |
+| {playlist_icon_active_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_1.png |
+| {playlist_icon_inactive_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_2.png |
+| {playlist_map_name} | throwbackhockey_p |
+| {playlist_server_command} | Game=TAGame.GameInfo_GodBall_TA?playtest?listen?Public?GameTags=BotsNone |
+| {playlist_mapset_name} | SoccarStandard |
