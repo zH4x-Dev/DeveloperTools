@@ -47,7 +47,7 @@ Usage Example: `	brank_dump_inventory {product_id} {online_instance_id} {product
 Output Example:
 `1334,117866551,Season 2 - Challenger,3,Rocket Boost,8,Limited`
 
--**Product Dumper**
+- **Product Dumper**
 
 Command: `brank_dump_products {parameters}`
 
@@ -55,14 +55,14 @@ Usage Example: `brank_dump_products {product_id} {product_long_label} {slot_onli
 
 Output Example: `1,8-Ball,Antenna,Uncommon,Antenna_8Ball_T`
 
--**Slot Dumper**
+- **Slot Dumper**
 Command: `brank_dump_slots {parameters}`
 
 Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description}`
 
 Output Example: `18,Player Anthem,Goal Stinger,None`
 
--**Map Dumper**
+- **Map Dumper**
 
 Command: `brank_dump_maps {parameters}`
 
@@ -70,7 +70,7 @@ Usage Example: `brank_dump_maps {map_base_name} {map_file_name} {map_weather_var
 
 Output Example: `DFH Stadium,stadium_day_p,2,Day`
 
--**Playlist Dumper**
+- **Playlist Dumper**
 
 Command: `brank_dump_playlists  {parameters}`
 
@@ -78,7 +78,7 @@ Usage Example: `brank_dump_playlists {playlist_id} {playlist_player_count} {play
 
 Output Example: `3,6,Standard,Classic team play,false`
 
--**Paint Dumper**
+- **Paint Dumper**
 
 Command: `brank_dump_paints {parameters}`
 
@@ -86,7 +86,7 @@ Usage Example: `brank_dump_paints {database_paint_id} {database_paint_name} {dat
 
 Output Example: `1,Red_00,Crimson,#990000|#FF0B0B|#720000|#FF0000`
 
--**Certification Dumper**
+- **Certification Dumper**
 
 Command: `brank_dump_certifications {parameters}`
 
@@ -94,7 +94,7 @@ Usage Example: `brank_dump_certifications {database_certified_id} {database_cert
 
 Output Example: `1,AerialGoals,Aviator,When equipped in an online match, this item keeps track of how many aerial goals you score.`
 
--**Special Edition Dumper**
+- **Special Edition Dumper**
 
 Command: `brank_dump_specialeditions {parameters}`
 
