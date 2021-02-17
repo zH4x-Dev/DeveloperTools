@@ -5,7 +5,7 @@ A collection of features that may be useful to plugin developers or organization
 
 All information exported/dumped from this plugin can be found in the `bakkesmod\data\DeveloperTools` directory in CSV format.
 
-# Features
+## Features
 
 - `Function Dumper` Dump all functions in the game that can be used for function hooks.
 - `Texture Name Dumper` Dump all names of currently active/loaded textures the game is using.
@@ -18,7 +18,7 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 - `Certification Dumper` Dump all information about certified attributes in the game.
 - `Special Edition Dumper` Dump all information about special edition attributes in the game.
 
-# Commands and Examples
+## Commands and Examples
 
 All dump commands (excluding the Function and Texture Dumper) can be used with custom parameters in any order the user wants. The map and playlist dumper features will only dump what is available to the user via the UI, this is to prevent accidently exposing unreleased game modes/maps.
 
@@ -42,10 +42,9 @@ Output Example: `Texture2D EngineResources.WhiteSquareTexture`
 
 Command: `brank_dump_inventory {parameters}`
 
-Usage Example: `	brank_dump_inventory {product_id} {online_instance_id} {product_long_label} {slot_index} {slot_online_label} {product_quality_id} {product_quality_label}`
+Usage Example: `brank_dump_inventory {product_id} {online_instance_id} {product_long_label} {slot_index} {slot_online_label} {product_quality_id} {product_quality_label}`
 
-Output Example:
-`1334,117866551,Season 2 - Challenger,3,Rocket Boost,8,Limited`
+Output Example: `1334,117866551,Season 2 - Challenger,3,Rocket Boost,8,Limited`
 
 - **Product Dumper**
 
@@ -56,6 +55,7 @@ Usage Example: `brank_dump_products {product_id} {product_long_label} {slot_onli
 Output Example: `1,8-Ball,Antenna,Uncommon,Antenna_8Ball_T`
 
 - **Slot Dumper**
+- 
 Command: `brank_dump_slots {parameters}`
 
 Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description}`
