@@ -55,7 +55,7 @@ Usage Example: `brank_dump_products {product_id} {product_long_label} {slot_onli
 Output Example: `1,8-Ball,Antenna,Uncommon,Antenna_8Ball_T`
 
 - **Slot Dumper**
-- 
+
 Command: `brank_dump_slots {parameters}`
 
 Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description}`
