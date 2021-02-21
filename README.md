@@ -25,6 +25,7 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 All dump commands (excluding the Function and Texture Dumper) can be used with custom parameters in any order the user wants. The map and playlist dumper features will only dump what is available to the user via the UI, this is to prevent accidently exposing unreleased game modes/maps.
 
 -**Texture Browser**
+
 Command: `brank_browsetextures {true_false}`
 
 Usage Example: `brank_browsetextures true`
@@ -35,6 +36,7 @@ Output Example:
 ![](https://i.imgur.com/IS6AVkA.png)
 
 -**Texture Drawer**
+
 Command: `brank_drawtexture {texture_name}`
 Command: `brank_erasetexture`
 
@@ -51,6 +53,7 @@ Command: `brank_dump_textures`
 Usage Example: `brank_dump_textures`
 
 Output Example: `Texture2D EngineResources.WhiteSquareTexture`
+
 - **Function Dumper**
 
 Command: `brank_dump_functions`
