@@ -8,8 +8,9 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 
 ## Features
 
-- `Function Dumper` Dump all functions in the game that can be used for function hooks.
+- `Texture Browser/Drawer` Browse through all textures that are currently loaded in the scene, as well as draw specific ones by name.
 - `Texture Name Dumper` Dump all names of currently active/loaded textures the game is using.
+- `Function Dumper` Dump all functions in the game that can be used for function hooks.
 - `Inventory Dumper` Dump information about the products in your inventory.
 - `Product Dumper` Dump  information about the products in the game.
 - `Slot Dumper` Dump information about slots in the game.
@@ -23,14 +24,6 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 
 All dump commands (excluding the Function and Texture Dumper) can be used with custom parameters in any order the user wants. The map and playlist dumper features will only dump what is available to the user via the UI, this is to prevent accidently exposing unreleased game modes/maps.
 
-- **Function Dumper**
-
-Command: `brank_dump_functions`
-
-Usage Example: `brank_dump_functions`
-
-Output Example: `Function Core.Object.RSmoothInterpTo`
-
 - **Texture Name Dumper**
 
 Command: `brank_dump_textures`
@@ -38,6 +31,14 @@ Command: `brank_dump_textures`
 Usage Example: `brank_dump_textures`
 
 Output Example: `Texture2D EngineResources.WhiteSquareTexture`
+
+- **Function Dumper**
+
+Command: `brank_dump_functions`
+
+Usage Example: `brank_dump_functions`
+
+Output Example: `Function Core.Object.RSmoothInterpTo`
 
 - **Inventory Dumper**
 
