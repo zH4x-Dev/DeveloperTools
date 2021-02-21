@@ -1,4 +1,5 @@
 
+
 # DeveloperTools
 
 A collection of features for plugin developers and organizations.
@@ -110,8 +111,6 @@ Parameters are organized by what can be used with each specific command, there i
 
 When dumping products related to your inventory all four parameters `Slot`, `Attribute`, `Online Product`, and `Offline Product` can be used. Online refers to information that is exclusive to products in your inventory. Offline refers to the information the game stores in it's database for products. As such the product dumper command can only use the `Slot` or `Offline Product` parameters. As you might guess, `Playlist` can only be used with the playlist dumper, `Map` will only work with the map dumper, and so on.
 
-If a parameter contains `bool`, it will return either true or false. If it contains `int`, it will return either 1 or 0 indicating true or false.
-
 | Slot Parameters | Output Example |
 | ------ | ------ |
 | {slot_label} | Body |
@@ -125,7 +124,6 @@ If a parameter contains `bool`, it will return either true or false. If it conta
 | {online_instance_id} | 2039203868 |
 | {online_series_id} | 20 |
 | {online_bool_tradable} | false |
-| {online_int_tradable} | 0 |
 | {online_added_timestamp} | 1509241699 |
 | {online_cached_sort_label} | Vampire Bat	CertifiedTurtle0102039203868 |
 | {online_cached_short_sort_label} | None |
@@ -140,17 +138,11 @@ If a parameter contains `bool`, it will return either true or false. If it conta
 | {product_quality_id} | 8 |
 | {product_quality_label} | Limited |
 | {product_bool_licensed} | false |
-| {product_int_licensed} | 0 |
 | {product_bool_paintable} | false |
-| {product_int_paintable} | 0 |
 | {product_bool_currency} | false |
-| {product_int_currency} | 0 |
 | {product_bool_blueprint} | false |
-| {product_int_blueprint} | 0 |
 | {product_bool_schematic} | false |
-| {product_int_schematic} | 0 |
 | {product_bool_decryptor} | false |
-| {product_int_decryptor} | 0 |
 | {product_asset_package} | skin_octane_esports |
 | {product_asset_path} | skin_octane_esports.skin_octane_esports |
 | {product_label} | RLCS |
@@ -180,41 +172,23 @@ If a parameter contains `bool`, it will return either true or false. If it conta
 | {playlist_description} | Ranked play with a team |
 | {playlist_player_count} | 6 |
 | {playlist_bool_standard} | true |
-| {playlist_int_standard} | 1 |
 | {playlist_bool_ranked} | false |
-| {playlist_int_ranked} | 0 |
 | {playlist_bool_solo} | false |
-| {playlist_int_solo} | 0 |
 | {palylist_bool_extramode} | false |
-| {playlist_int_extramode} | 0 |
 | {playlist_bool_private} | false |
-| {playlist_int_private} | 0 |
 | {playlist_bool_tournament} | false |
-| {playlist_int_tournament} | 0 |
 | {playlist_bool_applyquitpenalty} | true |
-| {playlist_int_applyquitpenalty} | 1 |
 | {playlist_bool_allowforfiet} | false |
-| {playlist_int_allowforfiet} | 0 |
 | {playlist_bool_disablereconnect} | false |
-| {playlist_int_disablereconnect} | 0 |
 | {playlist_bool_ignoreassignteams} | false |
-| {playlist_int_ignoreassignteams} | 0 |
 | {playlist_bool_allowbotfills} | true |
-| {playlist_int_allowbotfills} | 1 |
 | {playlist_bool_kickonmigrate} | false |
-| {playlist_int_kickonmigrate} | 0 |
 | {playlist_bool_checkreservation} | false |
-| {playlist_int_checkreservation} | 0 |
 | {playlist_bool_ismicroevent} | false |
-| {playlist_int_ismicroevent} | 0 |
 | {playlist_bool_hasvariableplayercount} | false |
-| {playlist_int_hasvariableplayercount} | 0 |
 | {playlist_bool_new} | false |
-| {playlist_int_new} | 0 |
 | {playlist_bool_allowclubs} | true |
-| {playlist_int_allowclubs} | 1 |
 | {playlist_bool_allowstayasparty} | true |
-| {playlist_int_allowstayasparty} | 1 |
 | {playlist_image_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_event_mode_bg_heatseeker.jpg |
 | {playlist_image_texture} | None |
 | {playlist_icon_active_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_1.png |
