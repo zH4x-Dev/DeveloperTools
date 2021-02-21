@@ -29,6 +29,7 @@ All dump commands (excluding the Function and Texture Dumper) can be used with c
 Command: `brank_browsetextures {true_false}`
 
 Usage Example: `brank_browsetextures true`
+
 To cycle through textures you can use your arrow keys or your scroll wheel.
 
 Output Example:
