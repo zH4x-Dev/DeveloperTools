@@ -39,6 +39,7 @@ Output Example:
 - **Texture Drawer**
 
 Command: `brank_drawtexture {texture_name}`
+
 Command: `brank_erasetexture`
 
 Usage Example: `brank_drawtexture Noise_Fire`
