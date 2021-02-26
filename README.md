@@ -19,6 +19,7 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 - `Paint Dumper` Dump all information about painted attributes in the game.
 - `Certification Dumper` Dump all information about certified attributes in the game.
 - `Special Edition Dumper` Dump all information about special edition attributes in the game.
+- `Team Edition Dumper` Dump all information about team editions in the game.
 
 ## Commands and Examples
 
@@ -127,6 +128,14 @@ Command: `brank_dump_specialeditions {parameters}`
 Usage Example: `brank_dump_specialeditions {database_special_id} {database_special_name} {database_special_label}`
 
 Output Example: `1,Edition_Holographic,Holographic`
+
+- **Team Edition Dumper**
+
+Command: `brank_dump_teameditions {parameters}`
+
+Usage Example: `brank_dump_teameditions {database_team_id} {database_team_name}	{database_team_label}`
+
+Output Example: `2,Cloud9,Cloud9`
 
 # Parameters and Examples
 
@@ -240,9 +249,9 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {attribute_special_id} | 2 |
 | {attribute_special_name} | Edition_Infinite |
 | {attribute_special_label} | Infinite |
-| {attribute_team_id} | None |
-| {attribute_team_name} | None |
-| {attribute_team_teamname} | None |
+| {attribute_team_id} | 26 |
+| {attribute_team_name} | NRG_Season8 |
+| {attribute_team_label} | NRG Esports |
 
 | Database Parameters | Output Example |
 | ------ | ------ |
@@ -259,3 +268,6 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {database_special_id} | 1 |
 | {database_special_name} | Edition_Holographic |
 | {database_special_label} | Holographic |
+| {database_team_id} | 26 |
+| {database_team_name} | NRG_Season8 |
+| {database_team_label} | NRG Esports |
