@@ -163,6 +163,9 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {online_cached_short_sort_label} | None |
 | {online_cached_hash_id} | 60729611 |
 | {online_attribute_string} | CertifiedTurtleGoals1: |
+| {online_blueprint_series_id} | 48 |
+| {online_blueprint_type_id} | 1 |
+| {online_blueprint_type_label} | Revealed |
 
 | Online Product Parameters | Output Example |
 | ------ | ------ |
@@ -252,6 +255,7 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {attribute_team_id} | 26 |
 | {attribute_team_name} | NRG_Season8 |
 | {attribute_team_label} | NRG Esports |
+| {attribute_blueprint_cost} | 2000 |
 
 | Database Parameters | Output Example |
 | ------ | ------ |
