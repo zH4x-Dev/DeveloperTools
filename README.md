@@ -35,7 +35,7 @@ To cycle through textures you can use your arrow keys or your scroll wheel.
 
 Output Example:
 
-![](https://i.imgur.com/IS6AVkA.png)
+![](https://i.imgur.com/2JFlzlY.png)
 
 - **Texture Drawer**
 
@@ -47,7 +47,7 @@ Usage Example: `brank_drawtexture Noise_Fire`
 
 Output Example:
 
-![](https://i.imgur.com/rPhY6Ox.png)
+![](https://i.imgur.com/Yly8CC2.png)
 
 - **Texture Name Dumper**
 
