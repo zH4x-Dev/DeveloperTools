@@ -4,7 +4,7 @@
 
 A collection of features for plugin developers and organizations.
 
-All information exported/dumped from this plugin can be found in the `bakkesmod\data\DeveloperTools` directory in CSV format.
+All information exported/dumped from this plugin can be found in the `bakkesmod\data\DeveloperTools` directory in either plain text or CSV format.
 
 ## Features
 
