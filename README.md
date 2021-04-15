@@ -181,6 +181,7 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {online_cached_hash_id} | 60729611 |
 | {online_attribute_string} | CertifiedTurtleGoals1: |
 | {online_blueprint_series_id} | 48 |
+| {online_blueprint_series_label} | Revival |
 | {online_blueprint_type_id} | 1 |
 | {online_blueprint_type_label} | Revealed |
 
