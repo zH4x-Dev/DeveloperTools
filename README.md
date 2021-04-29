@@ -4,7 +4,7 @@
 
 A collection of features for plugin developers and organizations.
 
-All information exported/dumped from this plugin can be found in the `bakkesmod\data\DeveloperTools` directory in either plain text or CSV format.
+All information exported/dumped from this plugin can be found in the `bakkesmod\data\DeveloperTools` directory in either json, csv, or plain text format.
 
 ## Features
 
@@ -86,7 +86,7 @@ Output Example: `Function Core.Object.RSmoothInterpTo`
 
 Command: `brank_dump_inventory {parameters}`
 
-Usage Example: `brank_dump_inventory {product_id} {online_instance_id} {product_long_label} {slot_index} {slot_online_label} {product_quality_id} {product_quality_label}`
+Usage Example: `brank_dump_inventory {product_id} {online_instance_id} {product_long_label} {slot_index} {slot_online_label} {product_quality_id} {product_quality_label} [CSV]`
 
 Output Example: `1334,117866551,Season 2 - Challenger,3,Rocket Boost,8,Limited`
 
@@ -94,7 +94,7 @@ Output Example: `1334,117866551,Season 2 - Challenger,3,Rocket Boost,8,Limited`
 
 Command: `brank_dump_products {parameters}`
 
-Usage Example: `brank_dump_products {product_id} {product_long_label} {slot_online_label} {product_quality_label} {product_thumbnail_asset}`
+Usage Example: `brank_dump_products {product_id} {product_long_label} {slot_online_label} {product_quality_label} {product_thumbnail_asset} [CSV]`
 
 Output Example: `1,8-Ball,Antenna,Uncommon,Antenna_8Ball_T`
 
@@ -102,7 +102,7 @@ Output Example: `1,8-Ball,Antenna,Uncommon,Antenna_8Ball_T`
 
 Command: `brank_dump_slots {parameters}`
 
-Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description}`
+Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description} [CSV]`
 
 Output Example: `18,Player Anthem,Goal Stinger,None`
 
@@ -110,7 +110,7 @@ Output Example: `18,Player Anthem,Goal Stinger,None`
 
 Command: `brank_dump_maps {parameters}`
 
-Usage Example: `brank_dump_maps {map_base_name} {map_file_name} {map_weather_variant_id} {map_variant_name}`
+Usage Example: `brank_dump_maps {map_base_name} {map_file_name} {map_weather_variant_id} {map_variant_name} [CSV]`
 
 Output Example: `DFH Stadium,stadium_day_p,2,Day`
 
@@ -118,7 +118,7 @@ Output Example: `DFH Stadium,stadium_day_p,2,Day`
 
 Command: `brank_dump_playlists  {parameters}`
 
-Usage Example: `brank_dump_playlists {playlist_id} {playlist_player_count} {playlist_title} {playlist_description} {playlist_bool_ranked}`
+Usage Example: `brank_dump_playlists {playlist_id} {playlist_player_count} {playlist_title} {playlist_description} {playlist_bool_ranked} [CSV]`
 
 Output Example: `3,6,Standard,Classic team play,false`
 
@@ -126,7 +126,7 @@ Output Example: `3,6,Standard,Classic team play,false`
 
 Command: `brank_dump_paints {parameters}`
 
-Usage Example: `brank_dump_paints {database_paint_id} {database_paint_name} {database_paint_label} {database_paint_colors}`
+Usage Example: `brank_dump_paints {database_paint_id} {database_paint_name} {database_paint_label} {database_paint_colors} [CSV]`
 
 Output Example: `1,Red_00,Crimson,#990000|#FF0B0B|#720000|#FF0000`
 
@@ -134,7 +134,7 @@ Output Example: `1,Red_00,Crimson,#990000|#FF0B0B|#720000|#FF0000`
 
 Command: `brank_dump_certifications {parameters}`
 
-Usage Example: `brank_dump_certifications {database_certified_id} {database_certified_name} {database_certified_label} {database_certified_description}`
+Usage Example: `brank_dump_certifications {database_certified_id} {database_certified_name} {database_certified_label} {database_certified_description} [CSV]`
 
 Output Example: `1,AerialGoals,Aviator,When equipped in an online match\, this item keeps track of how many aerial goals you score.`
 
@@ -142,7 +142,7 @@ Output Example: `1,AerialGoals,Aviator,When equipped in an online match\, this i
 
 Command: `brank_dump_specialeditions {parameters}`
 
-Usage Example: `brank_dump_specialeditions {database_special_id} {database_special_name} {database_special_label}`
+Usage Example: `brank_dump_specialeditions {database_special_id} {database_special_name} {database_special_label} [CSV]`
 
 Output Example: `1,Edition_Holographic,Holographic`
 
@@ -150,17 +150,22 @@ Output Example: `1,Edition_Holographic,Holographic`
 
 Command: `brank_dump_teameditions {parameters}`
 
-Usage Example: `brank_dump_teameditions {database_team_id} {database_team_name}	{database_team_label}`
+Usage Example: `brank_dump_teameditions {database_team_id} {database_team_name}	{database_team_label} [CSV]`
 
 Output Example: `2,Cloud9,Cloud9`
 
 # Parameters and Examples
 
-Parameters can be used in any order you want, the final output will be organized to match what you put in.
+Parameters can be used in any order you want, the final output will be organized to match what you put in; make sure to put either `[CSV]` or `[JSON]` at the end of the command for the format you want.
 
 Parameters are organized by what can be used with each specific command, there is `Slot`, `Online Product`, `Offline Product`, `Map`, `Playlist`, `Attribute`, and `Database`.
 
 When dumping products related to your inventory all four parameters `Slot`, `Attribute`, `Online Product`, and `Offline Product` can be used. Online refers to information that is exclusive to products in your inventory. Offline refers to the information the game stores in it's database for products. As such the product dumper command can only use the `Slot` or `Offline Product` parameters. As you might guess, `Playlist` can only be used with the playlist dumper, `Map` will only work with the map dumper, and so on.
+
+| Format Parameters |
+| ------ | ------ |
+| [CSV] | Dumps the command you're using in CSV format. |
+| [JSON] | Dumps the command you're using in JSON format. |
 
 | Slot Parameters | Output Example |
 | ------ | ------ |
