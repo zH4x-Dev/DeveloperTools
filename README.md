@@ -160,7 +160,7 @@ Parameters are organized by what can be used with each specific command, there i
 
 When dumping products related to your inventory all four parameters `Slot`, `Attribute`, `Online Product`, and `Offline Product` can be used. Online refers to information that is exclusive to products in your inventory. Offline refers to the information the game stores in it's database for products. As such the product dumper command can only use the `Slot` or `Offline Product` parameters. As you might guess, `Playlist` can only be used with the playlist dumper, `Map` will only work with the map dumper, and so on.
 
-| Format Parameters |
+| Format Parameters | Description |
 | ------ | ------ |
 | [CSV] | Dumps the command you're using in CSV format. |
 | [JSON] | Dumps the command you're using in JSON format. |
