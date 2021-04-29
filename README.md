@@ -1,6 +1,4 @@
-
-
-# DeveloperTools
+# DeveloperTools v1.6
 
 A collection of features for plugin developers and organizations.
 
