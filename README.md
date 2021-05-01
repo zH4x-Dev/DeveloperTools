@@ -8,6 +8,7 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 
 - `Texture Browser/Drawer` Browse through all textures that are currently loaded in the scene, as well as draw specific ones by name.
 - `Texture Name Dumper` Dump all names of currently active/loaded textures the game is using.
+- `Thumbnail Drawer` Loads and then draws a products thumbnaill texture to the screen.
 - `Service Dumper` Dumps all useful information regaurding service headers the game uses for their API.
 - `Function Dumper` Dump all functions in the game that can be used for function hooks.
 - `Inventory Dumper` Dump information about the products in your inventory.
@@ -44,9 +45,19 @@ Command: `brank_erasetexture`
 
 Usage Example: `brank_drawtexture Noise_Fire`
 
-Output Example:
+Output Example: Erases the texture thats currently being drawn on screen.
 
 ![](https://i.imgur.com/Yly8CC2.png)
+
+- **Thumbnail Drawer**
+
+Command: `brank_drawthumbnail {product_id}`
+
+Usage Example: `brank_drawthumbnail 1332`
+
+Output Example:
+
+![](https://i.imgur.com/MwOZHlM.png)
 
 - **Texture Name Dumper**
 
