@@ -27,7 +27,7 @@ All dump commands (excluding the Function and Texture Dumper) can be used with c
 
 - **Texture Browser**
 
-Command: `brank_browsetextures {true-false}`
+Command: `brank_browsetextures <true_fasle>`
 
 Usage Example: `brank_browsetextures true`
 
@@ -39,7 +39,7 @@ Output Example:
 
 - **Texture Drawer**
 
-Command: `brank_drawtexture {texture_name}`
+Command: `brank_drawtexture <texture_name>`
 
 Command: `brank_erasetexture`
 
@@ -51,7 +51,7 @@ Output Example: Erases the texture thats currently being drawn on screen.
 
 - **Thumbnail Drawer (Experimental Feature)**
 
-Command: `brank_drawthumbnail {product_id}`
+Command: `brank_drawthumbnail <product_id>`
 
 Usage Example: `brank_drawthumbnail 1332`
 
