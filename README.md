@@ -49,7 +49,7 @@ Output Example: Erases the texture thats currently being drawn on screen.
 
 ![](https://i.imgur.com/Yly8CC2.png)
 
-- **Thumbnail Drawer**
+- **Thumbnail Drawer (Experimental Feature)**
 
 Command: `brank_drawthumbnail {product_id}`
 
