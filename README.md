@@ -11,15 +11,16 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 - `Thumbnail Drawer` Loads and then draws a products thumbnaill texture to the screen.
 - `Service Dumper` Dumps all useful information regaurding service headers the game uses for their API.
 - `Function Dumper` Dump all functions in the game that can be used for function hooks.
-- `Inventory Dumper` Dump information about the products in your inventory.
-- `Product Dumper` Dump  information about the products in the game.
 - `Slot Dumper` Dump information about slots in the game.
-- `Map Dumper` Dump all user-available information about maps in the game.
+- `Product Dumper` Dump  information about the products in the game.
+- `Inventory Dumper` Dump information about the products in your inventory.
 - `Playlist Dumper` Dump all user-available information about playlists in the game.
 - `Paint Dumper` Dump all information about painted attributes in the game.
 - `Certification Dumper` Dump all information about certified attributes in the game.
 - `Special Edition Dumper` Dump all information about special edition attributes in the game.
+- `Title Dumper` Dump all information about in-game titles.
 - `Team Edition Dumper` Dump all information about team editions in the game.
+- `Map Dumper` Dump all user-available information about maps in the game.
 
 ## Commands and Examples
 
@@ -107,14 +108,6 @@ Usage Example: `brank_dump_products {product_id} {product_long_label} {slot_onli
 
 Output Example: `1,8-Ball,Antenna,Uncommon,Antenna_8Ball_T`
 
-- **Slot Dumper**
-
-Command: `brank_dump_slots {parameters}`
-
-Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description} [CSV]`
-
-Output Example: `18,Player Anthem,Goal Stinger,None`
-
 - **Map Dumper**
 
 Command: `brank_dump_maps {parameters}`
@@ -155,6 +148,14 @@ Usage Example: `brank_dump_specialeditions {database_special_id} {database_speci
 
 Output Example: `1,Edition_Holographic,Holographic`
 
+- **Title Dumper**
+
+Command: `brank_dump_titles {parameters}`
+
+Usage Example: `brank_dump_titles {database_title_id} {database_title_text} {database_title_color} {database_title_glowcolor}[CSV]`
+
+Output Example: `CRL_Season_1_Champion,CRL Season 1 Champion,#FFEB5C,#FFA300`
+
 - **Team Edition Dumper**
 
 Command: `brank_dump_teameditions {parameters}`
@@ -162,6 +163,14 @@ Command: `brank_dump_teameditions {parameters}`
 Usage Example: `brank_dump_teameditions {database_team_id} {database_team_name}	{database_team_label} [CSV]`
 
 Output Example: `2,Cloud9,Cloud9`
+
+- **Slot Dumper**
+
+Command: `brank_dump_slots {parameters}`
+
+Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description} [CSV]`
+
+Output Example: `18,Player Anthem,Goal Stinger,None`
 
 # Parameters and Examples
 
@@ -225,47 +234,6 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {product_thumbnail_asset} | Skin_Octane_Esports_T |
 | {product_trademark_label} | RLCS |
 
-| Map Parameters | Output Example |
-| ------ | ------ |
-| {map_weather_variant_id} | 2 |
-| {map_weather_variant_name} | Day |
-| {map_random_weight} | 1.300000 |
-| {map_variant_name} | Day |
-| {map_base_name} | DFH Stadium |
-| {map_file_name} | stadium_day_p |
-
-| Playlist Parameters | Output Example |
-| ------ | ------ |
-| {playlist_id} | 3 |
-| {playlist_title} | Standard |
-| {playlist_description} | Ranked play with a team |
-| {playlist_player_count} | 6 |
-| {playlist_bool_standard} | true |
-| {playlist_bool_ranked} | false |
-| {playlist_bool_solo} | false |
-| {palylist_bool_extramode} | false |
-| {playlist_bool_private} | false |
-| {playlist_bool_tournament} | false |
-| {playlist_bool_applyquitpenalty} | true |
-| {playlist_bool_allowforfiet} | false |
-| {playlist_bool_disablereconnect} | false |
-| {playlist_bool_ignoreassignteams} | false |
-| {playlist_bool_allowbotfills} | true |
-| {playlist_bool_kickonmigrate} | false |
-| {playlist_bool_checkreservation} | false |
-| {playlist_bool_ismicroevent} | false |
-| {playlist_bool_hasvariableplayercount} | false |
-| {playlist_bool_new} | false |
-| {playlist_bool_allowclubs} | true |
-| {playlist_bool_allowstayasparty} | true |
-| {playlist_image_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_event_mode_bg_heatseeker.jpg |
-| {playlist_image_texture} | None |
-| {playlist_icon_active_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_1.png |
-| {playlist_icon_inactive_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_2.png |
-| {playlist_map_name} | throwbackhockey_p |
-| {playlist_server_command} | Game=TAGame.GameInfo_GodBall_TA?playtest?listen?Public?GameTags=BotsNone |
-| {playlist_mapset_name} | SoccarStandard |
-
 | Attribute Parameters | Output Example |
 | ------ | ------ |
 | {attribute_painted_id} | 12 |
@@ -304,6 +272,52 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {database_special_id} | 1 |
 | {database_special_name} | Edition_Holographic |
 | {database_special_label} | Holographic |
+| {database_title_id} | S15_SuperSonic_Legend |
+| {database_title_category} | SZN_1_White |
+| {database_title_text} | S1 Supersonic Legend |
+| {database_title_color} | #E8E8E8 |
+| {database_title_glowcolor} | #E8E8E8 |
 | {database_team_id} | 26 |
 | {database_team_name} | NRG_Season8 |
 | {database_team_label} | NRG Esports |
+
+| Playlist Parameters | Output Example |
+| ------ | ------ |
+| {playlist_id} | 3 |
+| {playlist_title} | Standard |
+| {playlist_description} | Ranked play with a team |
+| {playlist_player_count} | 6 |
+| {playlist_bool_standard} | true |
+| {playlist_bool_ranked} | false |
+| {playlist_bool_solo} | false |
+| {palylist_bool_extramode} | false |
+| {playlist_bool_private} | false |
+| {playlist_bool_tournament} | false |
+| {playlist_bool_applyquitpenalty} | true |
+| {playlist_bool_allowforfiet} | false |
+| {playlist_bool_disablereconnect} | false |
+| {playlist_bool_ignoreassignteams} | false |
+| {playlist_bool_allowbotfills} | true |
+| {playlist_bool_kickonmigrate} | false |
+| {playlist_bool_checkreservation} | false |
+| {playlist_bool_ismicroevent} | false |
+| {playlist_bool_hasvariableplayercount} | false |
+| {playlist_bool_new} | false |
+| {playlist_bool_allowclubs} | true |
+| {playlist_bool_allowstayasparty} | true |
+| {playlist_image_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_event_mode_bg_heatseeker.jpg |
+| {playlist_image_texture} | None |
+| {playlist_icon_active_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_1.png |
+| {playlist_icon_inactive_url} | https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_2.png |
+| {playlist_map_name} | throwbackhockey_p |
+| {playlist_server_command} | Game=TAGame.GameInfo_GodBall_TA?playtest?listen?Public?GameTags=BotsNone |
+| {playlist_mapset_name} | SoccarStandard |
+
+| Map Parameters | Output Example |
+| ------ | ------ |
+| {map_weather_variant_id} | 2 |
+| {map_weather_variant_name} | Day |
+| {map_random_weight} | 1.300000 |
+| {map_variant_name} | Day |
+| {map_base_name} | DFH Stadium |
+| {map_file_name} | stadium_day_p |
