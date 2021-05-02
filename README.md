@@ -54,11 +54,11 @@ Output Example: Erases the texture thats currently being drawn on screen.
 
 Command: `brank_drawthumbnail <product_id>`
 
-Usage Example: `brank_drawthumbnail 1332`
+Usage Example: `brank_drawthumbnail 32`
 
 Output Example:
 
-![](https://i.imgur.com/MwOZHlM.png)
+![](https://i.imgur.com/kE0iGP2.png/)
 
 - **Texture Name Dumper**
 
