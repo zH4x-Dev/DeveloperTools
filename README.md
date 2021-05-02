@@ -14,12 +14,12 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 - `Slot Dumper` Dump information about slots in the game.
 - `Product Dumper` Dump  information about the products in the game.
 - `Inventory Dumper` Dump information about the products in your inventory.
-- `Playlist Dumper` Dump all user-available information about playlists in the game.
 - `Paint Dumper` Dump all information about painted attributes in the game.
 - `Certification Dumper` Dump all information about certified attributes in the game.
 - `Special Edition Dumper` Dump all information about special edition attributes in the game.
 - `Title Dumper` Dump all information about in-game titles.
 - `Team Edition Dumper` Dump all information about team editions in the game.
+- `Playlist Dumper` Dump all user-available information about playlists in the game.
 - `Map Dumper` Dump all user-available information about maps in the game.
 
 ## Commands and Examples
