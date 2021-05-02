@@ -92,13 +92,13 @@ Usage Example: `brank_dump_functions`
 
 Output Example: `Function Core.Object.RSmoothInterpTo`
 
-- **Inventory Dumper**
+- **Slot Dumper**
 
-Command: `brank_dump_inventory {parameters}`
+Command: `brank_dump_slots {parameters}`
 
-Usage Example: `brank_dump_inventory {product_id} {online_instance_id} {product_long_label} {slot_index} {slot_online_label} {product_quality_id} {product_quality_label} [CSV]`
+Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description} [CSV]`
 
-Output Example: `1334,117866551,Season 2 - Challenger,3,Rocket Boost,8,Limited`
+Output Example: `18,Player Anthem,Goal Stinger,None`
 
 - **Product Dumper**
 
@@ -108,21 +108,13 @@ Usage Example: `brank_dump_products {product_id} {product_long_label} {slot_onli
 
 Output Example: `1,8-Ball,Antenna,Uncommon,Antenna_8Ball_T`
 
-- **Map Dumper**
+- **Inventory Dumper**
 
-Command: `brank_dump_maps {parameters}`
+Command: `brank_dump_inventory {parameters}`
 
-Usage Example: `brank_dump_maps {map_base_name} {map_file_name} {map_weather_variant_id} {map_variant_name} [CSV]`
+Usage Example: `brank_dump_inventory {product_id} {online_instance_id} {product_long_label} {slot_index} {slot_online_label} {product_quality_id} {product_quality_label} [CSV]`
 
-Output Example: `DFH Stadium,stadium_day_p,2,Day`
-
-- **Playlist Dumper**
-
-Command: `brank_dump_playlists  {parameters}`
-
-Usage Example: `brank_dump_playlists {playlist_id} {playlist_player_count} {playlist_title} {playlist_description} {playlist_bool_ranked} [CSV]`
-
-Output Example: `3,6,Standard,Classic team play,false`
+Output Example: `1334,117866551,Season 2 - Challenger,3,Rocket Boost,8,Limited`
 
 - **Paint Dumper**
 
@@ -164,13 +156,21 @@ Usage Example: `brank_dump_teameditions {database_team_id} {database_team_name}	
 
 Output Example: `2,Cloud9,Cloud9`
 
-- **Slot Dumper**
+- **Playlist Dumper**
 
-Command: `brank_dump_slots {parameters}`
+Command: `brank_dump_playlists  {parameters}`
 
-Usage Example: `brank_dump_slots {slot_index} {slot_label} {slot_online_label} {slot_description} [CSV]`
+Usage Example: `brank_dump_playlists {playlist_id} {playlist_player_count} {playlist_title} {playlist_description} {playlist_bool_ranked} [CSV]`
 
-Output Example: `18,Player Anthem,Goal Stinger,None`
+Output Example: `3,6,Standard,Classic team play,false`
+
+- **Map Dumper**
+
+Command: `brank_dump_maps {parameters}`
+
+Usage Example: `brank_dump_maps {map_base_name} {map_file_name} {map_weather_variant_id} {map_variant_name} [CSV]`
+
+Output Example: `DFH Stadium,stadium_day_p,2,Day`
 
 # Parameters and Examples
 
