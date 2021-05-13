@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RLSDK">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Plugin">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="RLSDK\SDK_HEADERS">
+      <UniqueIdentifier>{dadee953-d507-4634-8ea6-127bd07779f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrappers">
+      <UniqueIdentifier>{60f83ef4-9dc0-4cf8-86f7-b71c7f691d2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DeveloperTools.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\Utils.cpp">
+      <Filter>RLSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\AkAudio_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\Core_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\Engine_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\GFxUI_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\IpDrv_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\OnlineSubsystemEOS_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\OnlineSubsystemSteamworks_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\ProjectX_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\TAGame_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\WinDrv_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\SDK_HEADERS\XAudio2_classes.cpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClCompile>
+    <ClCompile Include="RLSDK\GameDefines.cpp">
+      <Filter>RLSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrappers\CanvasWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrappers\StringWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrappers\Colors.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrappers\BulkDataWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrappers\ObjectWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrappers\Texture2DWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrappers\TextureWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="Wrappers\SurfaceWrapper.cpp">
+      <Filter>Wrappers</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Plugin</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeveloperTools.hpp">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\Utils.hpp">
+      <Filter>RLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\AkAudio_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\AkAudio_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\AkAudio_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\Core_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\Core_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\Core_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\Engine_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\Engine_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\Engine_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\GFxUI_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\GFxUI_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\GFxUI_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\IpDrv_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\IpDrv_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\IpDrv_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemEOS_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemEOS_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemEOS_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemSteamworks_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemSteamworks_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemSteamworks_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\ProjectX_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\ProjectX_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\ProjectX_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\TAGame_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\TAGame_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\TAGame_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\WinDrv_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\WinDrv_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\WinDrv_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\XAudio2_classes.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\XAudio2_parameters.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SDK_HEADERS\XAudio2_structs.hpp">
+      <Filter>RLSDK\SDK_HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\GameDefines.hpp">
+      <Filter>RLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="RLSDK\SdkHeaders.hpp">
+      <Filter>RLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrappers\CanvasWrapper.hpp">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrappers\StringWrapper.hpp">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.hpp">
+      <Filter>Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrappers\Colors.hpp">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrappers\BulkDataWrapper.hpp">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrappers\ObjectWrapper.hpp">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrappers\Texture2DWrapper.hpp">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrappers\TextureWrapper.hpp">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrappers\SurfaceWrapper.hpp">
+      <Filter>Wrappers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

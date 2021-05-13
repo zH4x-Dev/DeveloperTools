@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4b314664-5bab-4dbe-b00a-5fb3ee9268a9}</ProjectGuid>
+    <RootNamespace>DeveloperTools</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\legog\AppData\Roaming\bakkesmod\bakkesmod\bakkesmodsdk\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\legog\AppData\Roaming\bakkesmod\bakkesmod\bakkesmodsdk\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DeveloperTools.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="RLSDK\GameDefines.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\AkAudio_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\Core_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\Engine_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\GFxUI_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\IpDrv_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\OnlineSubsystemEOS_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\OnlineSubsystemSteamworks_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\ProjectX_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\TAGame_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\WinDrv_classes.cpp" />
+    <ClCompile Include="RLSDK\SDK_HEADERS\XAudio2_classes.cpp" />
+    <ClCompile Include="RLSDK\Utils.cpp" />
+    <ClCompile Include="Wrappers\BulkDataWrapper.cpp" />
+    <ClCompile Include="Wrappers\CanvasWrapper.cpp" />
+    <ClCompile Include="Wrappers\Colors.cpp" />
+    <ClCompile Include="Wrappers\ObjectWrapper.cpp" />
+    <ClCompile Include="Wrappers\StringWrapper.cpp" />
+    <ClCompile Include="Wrappers\SurfaceWrapper.cpp" />
+    <ClCompile Include="Wrappers\Texture2DWrapper.cpp" />
+    <ClCompile Include="Wrappers\TextureWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeveloperTools.hpp" />
+    <ClInclude Include="pch.hpp" />
+    <ClInclude Include="RLSDK\GameDefines.hpp" />
+    <ClInclude Include="RLSDK\SdkHeaders.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\AkAudio_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\AkAudio_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\AkAudio_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\Core_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\Core_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\Core_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\Engine_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\Engine_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\Engine_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\GFxUI_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\GFxUI_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\GFxUI_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\IpDrv_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\IpDrv_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\IpDrv_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemEOS_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemEOS_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemEOS_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemSteamworks_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemSteamworks_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\OnlineSubsystemSteamworks_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\ProjectX_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\ProjectX_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\ProjectX_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\TAGame_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\TAGame_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\TAGame_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\WinDrv_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\WinDrv_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\WinDrv_structs.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\XAudio2_classes.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\XAudio2_parameters.hpp" />
+    <ClInclude Include="RLSDK\SDK_HEADERS\XAudio2_structs.hpp" />
+    <ClInclude Include="RLSDK\Utils.hpp" />
+    <ClInclude Include="Wrappers\BulkDataWrapper.hpp" />
+    <ClInclude Include="Wrappers\CanvasWrapper.hpp" />
+    <ClInclude Include="Wrappers\Colors.hpp" />
+    <ClInclude Include="Wrappers\ObjectWrapper.hpp" />
+    <ClInclude Include="Wrappers\StringWrapper.hpp" />
+    <ClInclude Include="Wrappers\SurfaceWrapper.hpp" />
+    <ClInclude Include="Wrappers\Texture2DWrapper.hpp" />
+    <ClInclude Include="Wrappers\TextureWrapper.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
