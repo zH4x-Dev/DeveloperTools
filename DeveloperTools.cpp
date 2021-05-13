@@ -2718,7 +2718,7 @@ void DeveloperTools::DumpMaps(const std::vector<std::string>& params)
 
 			TArray<UMapData_TA*> mapList;
 
-			if (PlaylistLimiter)
+			if (MapLimiter)
 			{
 				mapList = IUMapList_TA->SortedMaps;
 			}
