@@ -178,7 +178,6 @@ void DeveloperTools::onLoad()
 				gameWrapper->HookEventWithCaller<ActorWrapper>("Function TAGame.GFxData_ViewMetrics_TA.SetActiveView", std::bind(&DeveloperTools::SetActiveView, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 				gameWrapper->HookEventWithCaller<ActorWrapper>("Function TAGame.GameViewportClient_TA.HandleKeyPress", std::bind(&DeveloperTools::GameViewPortKeyPress, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 				gameWrapper->HookEventWithCaller<ActorWrapper>("Function Engine.HUD.PostRender", std::bind(&DeveloperTools::CanvasRender, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
-				//gameWrapper->HookEventWithCallerPost<ActorWrapper>("Function TAGame.LoadoutRenderer_TA.EventLoadoutRendered", std::bind(&DeveloperTools::DebugHook, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 			}
 			else
 			{

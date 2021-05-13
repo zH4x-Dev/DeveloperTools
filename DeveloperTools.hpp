@@ -1,6 +1,7 @@
 #pragma once
 #pragma comment(lib, "pluginsdk.lib")
 #include "bakkesmod/plugin/bakkesmodplugin.h"
+// INCLUDE RLSDK STUFF HERE
 #include <filesystem>
 
 /*
