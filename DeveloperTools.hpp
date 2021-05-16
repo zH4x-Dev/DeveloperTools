@@ -5,6 +5,12 @@
 #include <filesystem>
 
 /*
+# =================================================================================================== #
+# Warning: This plugin requires the RLSDK, you will not be able to compile the plugin without it!
+# =================================================================================================== #
+*/
+
+/*
 	2.0 Changelog:
 	- Fixed the thumbnail drawer sometimes rendering decals on loadouts, instead of just the thumbnail itself.
 

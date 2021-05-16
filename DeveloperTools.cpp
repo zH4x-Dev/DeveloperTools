@@ -10,6 +10,12 @@
 #include <chrono>
 #include <thread>
 
+/*
+# =================================================================================================== #
+# Warning: This plugin requires the RLSDK, you will not be able to compile the plugin without it!
+# =================================================================================================== #
+*/
+
 BAKKESMOD_PLUGIN(DeveloperTools, "BranK's Developer Tools", "2.0", PERMISSION_ALL)
 
 ParameterPair::ParameterPair()
