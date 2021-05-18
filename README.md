@@ -1,4 +1,4 @@
-# DeveloperTools v2.0
+# DeveloperTools v2.1
 
 A collection of features for plugin developers and organizations.
 
@@ -21,6 +21,7 @@ All information exported/dumped from this plugin can be found in the `bakkesmod\
 - `Team Edition Dumper` Dump all information about team editions in the game.
 - `Playlist Dumper` Dump all user-available information about playlists in the game.
 - `Map Dumper` Dump all user-available information about maps in the game.
+- `Series Dumper` Dump all user-available information about product series in the game.
 
 ## Commands and Examples
 
@@ -172,6 +173,14 @@ Usage Example: `brank_dump_maps {map_base_name} {map_file_name} {map_weather_var
 
 Output Example: `DFH Stadium,stadium_day_p,2,Day`
 
+- **Series Dumper**
+
+Command: `brank_dump_series {parameters}`
+
+Usage Example: `brank_dump_series {database_series_id} {database_series_label} [CSV]`
+
+Output Example: `8,Player's Choice`
+
 # Parameters and Examples
 
 Parameters can be used in any order you want, the final output will be organized to match what you put in; make sure to put either `[CSV]` or `[JSON]` at the end of the command for the format you want.
@@ -280,6 +289,8 @@ When dumping products related to your inventory all four parameters `Slot`, `Att
 | {database_team_id} | 26 |
 | {database_team_name} | NRG_Season8 |
 | {database_team_label} | NRG Esports |
+| {database_series_id} | 8 |
+| {database_series_label} | Player's Choice |
 
 | Playlist Parameters | Output Example |
 | ------ | ------ |
